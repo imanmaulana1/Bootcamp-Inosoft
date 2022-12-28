@@ -1,0 +1,105 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+.custom-bg-nav {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.custom-active {
+  color: #66b933;
+}
+.custom-btn-success {
+  background-color: #66b933;
+  color: #ffffff;
+}
+
+.custom-btn-success:hover {
+  background-color: #76d43c;
+  color: #ffffff;
+}
+
+.custom-hero {
+  box-shadow: rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
+}
+
+.custom-category {
+  color: #939393;
+}
+
+.custom-bg-card {
+  background-color: #242424;
+  transition: all 0.3s ease;
+}
+
+.custom-bg-card-sm {
+  background-color: #242424;
+}
+
+.custom-bg-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.custom-bg-product {
+  background-color: transparent;
+}
+
+.custom-font-product {
+  font-size: 15px;
+}
+
+.custom-font-product-2 {
+  font-size: 12px;
+  color: #939393;
+}
+
+.custom-bg-product-sm {
+  background-color: transparent;
+}
+
+.custom-font-product-sm {
+  color: #939393;
+}
+
+.custom-font-product-sm:hover {
+  color: #ffffff;
+}
+.custom-font-price {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.custom-btn-success2 {
+  background-color: #66b933;
+  color: #ffffff;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.custom-btn-success2:hover {
+  background-color: #76d43c;
+  color: #ffffff;
+}
+
+.custom-btn-success2-sm {
+  background-color: #66b933;
+  color: #ffffff;
+  padding: 2px 50px;
+  font-size: 15px;
+}
+
+.custom-btn-success2-sm:hover {
+  background-color: #76d43c;
+  color: #ffffff;
+}
+
+.custom-footer {
+  border-top: #343434 1px solid;
+}
+
+.custom-font-footer {
+  font-size: 15px;
+  color: #939393;
+}
