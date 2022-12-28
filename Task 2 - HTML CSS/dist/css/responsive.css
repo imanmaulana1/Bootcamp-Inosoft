@@ -1,0 +1,28 @@
+@media screen and (max-width: 992px) {
+  #submenu {
+    display: block;
+  }
+
+  .navbar .navbar-box .menu,
+  .navbar .navbar-box .login {
+    display: none;
+  }
+
+  .header {
+    padding-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .header .header-box .title h1 {
+    font-size: 40px;
+  }
+
+  .header .header-box .form-select {
+    width: 35%;
+  }
+
+  .header .header-box input[type="submit"] {
+    width: 26%;
+  }
+}

@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  padding: 25px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-box .menu {
+  display: flex;
+  column-gap: 30px;
+}
+
+.navbar .navbar-box .menu li a,
+.navbar .navbar-box a {
+  color: #ffffff8a;
+}
+
+.nav-scroll-active .navbar-box .menu li a,
+.nav-scroll-active .navbar-box .login {
+  color: #ffffff;
+}
+
+.navbar .navbar-box .menu li a:hover,
+.navbar .navbar-box .login:hover {
+  color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+  opacity: 1;
+  background-image: url("../../assets/img/mercy.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 25vh;
+  overflow: hidden;
+}
+
+.header .header-box .title h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.header .header-box .title p {
+  color: #ffffff8a;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 1.6;
+}
+
+.header .header-box form {
+  text-align: center;
+  padding-top: 20px;
+}
+.header .header-box .form-select {
+  width: 20%;
+  height: 25px;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.header .header-box .form-option {
+  background-color: rgb(163, 163, 163);
+}
+
+.header .header-box input[type="submit"] {
+  width: 15%;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #161c89;
+  opacity: 0.7;
+  box-shadow: rgb(0, 0, 0) 0px -50px 36px -28px inset;
+  position: relative;
+}
+
+.header .header-box .form-select:focus {
+  opacity: 1;
+}
+
+.header .header-box input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.header .header-box input[type="submit"]:active {
+  box-shadow: none;
+  top: 2px;
+}
+
+#submenu {
+  color: #ffffff;
+  font-size: 50px;
+  display: none;
+}
