@@ -31,6 +31,10 @@
     padding-top: 300px;
   }
 
+  .header .header-box input[type="submit"] {
+    width: 20%;
+  }
+
   .hero {
     min-height: 100vh;
   }
@@ -126,6 +130,8 @@
   }
   .header .header-box input[type="submit"] {
     width: 28%;
+    font-size: 15px;
+    padding: 5px 0;
     height: 30px;
   }
 

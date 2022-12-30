@@ -110,11 +110,14 @@
 .header .header-box input[type="submit"] {
   width: 15%;
   border-radius: 5px;
-  height: 30px;
+  padding: 1px 20px;
   cursor: pointer;
   color: #ffffff;
   background-color: #161c89;
-  opacity: 0.7;
+  opacity: 0.9;
+  box-shadow: rgb(0, 0, 0) 0px -50px 36px -28px inset;
+  position: relative;
+  top: 2px;
 }
 
 .header .header-box .form-select:focus {
@@ -123,6 +126,11 @@
 
 .header .header-box input[type="submit"]:hover {
   opacity: 1;
+}
+
+.header .header-box input[type="submit"]:active {
+  box-shadow: none;
+  top: 2px;
 }
 /* END HEADER */
 
