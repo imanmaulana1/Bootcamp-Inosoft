@@ -66,6 +66,7 @@ let finalAnswer = 0;
         } else {
           valOne.push(this.innerText);
           screen.innerHTML = valOne.join("");
+          console.log(valOne);
         }
         break;
 
@@ -138,11 +139,19 @@ const storeValue = () => {
 
 // Perhitungan
 const prosesPerhitungan = () => {
-  history.innerHTML = valTwo + operator + valOne.join("");
-  finalAnswer = eval(valTwo + operator + valOne.join(""));
+  if (persen === true) {
+    history.innerHTML = valTwo + operator + valOne[valOne.length - 1];
+    finalAnswer = eval(valTwo + operator + valOne[valOne.length - 1]);
+  } else {
+    history.innerHTML = valTwo + operator + valOne.join("");
+    finalAnswer = eval(valTwo + operator + valOne.join(""));
+  }
+
   screen.innerHTML = finalAnswer;
   valOne = [];
-  valTwo = [];
+
+  console.log(valOne);
+  valTwo = finalAnswer;
   operator = [];
   deletes.innerHTML = "AC";
 };
