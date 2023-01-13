@@ -4,6 +4,7 @@ let screen = document.querySelector(".screen");
 let history = document.getElementById("history");
 screen.innerHTML = 0;
 history.innerHTML = "";
+let persen = false;
 let valOne = [];
 let valTwo = [];
 var operator = [];
@@ -12,7 +13,7 @@ let finalAnswer = 0;
 [...buttons].map((x) => {
   x.addEventListener("click", function (e) {
     valTwo.length > 0 ? (deletes.innerHTML = "C") : (deletes.innerHTML = "AC");
-    console.log(valOne);
+
     switch (this.innerHTML) {
       case "AC":
         clearDisplay();
@@ -24,6 +25,13 @@ let finalAnswer = 0;
 
       case "+/-":
         makeNegative();
+        break;
+
+      case "%":
+        console.log();
+        valOne.push(valOne.join("") / 100);
+        screen.innerHTML = valOne[valOne.length - 1];
+        persen = true;
         break;
 
       case "x":
@@ -71,7 +79,6 @@ let finalAnswer = 0;
         } else {
           valOne.push(this.innerText);
           screen.innerHTML = valOne.join("");
-          console.log(valOne);
         }
         break;
     }
@@ -112,11 +119,19 @@ const storeValue = () => {
   } else if (valTwo.length > 0) {
     history.innerHTML = valTwo + " " + operator;
   } else if (valTwo.length == 0) {
-    valTwo.push(valOne.join(""));
-    valOne = [];
-    screen.innerHTML = "";
-    history.innerHTML = "";
-    history.innerHTML = valTwo + " " + operator;
+    if (persen === true) {
+      valTwo.push(valOne[valOne.length - 1]);
+      valOne = [];
+      screen.innerHTML = "";
+      history.innerHTML = "";
+      history.innerHTML = valTwo + " " + operator;
+    } else {
+      valTwo.push(valOne.join(""));
+      valOne = [];
+      screen.innerHTML = "";
+      history.innerHTML = "";
+      history.innerHTML = valTwo + " " + operator;
+    }
   }
   history.innerHTML = valTwo + " " + operator;
 };
